@@ -1,7 +1,11 @@
+/* Header */
+
 header{
+  position: fixed;
+  top: 0px;
+  background-color: white;
   display:flex;
   align-items: center;
-  position: fixed;
   z-index: 1;
   height: 80px;
   width:100%;
@@ -39,4 +43,172 @@ nav li{
 
 a{
   color: black;
+}
+
+/* Main Story Content */
+
+.main{
+    margin-left: 150px;
+    display: flex;
+    width: 1266px; /* Do i need this? */
+  }
+
+/*Left Column Content*/
+
+.column.left{
+  display: flex;
+  margin-bottom: 30px;
+  width: 630px;
+  flex-direction: column;
+  margin-right: 32px;
+  margin-top: 80px;
+}
+
+.stories{
+  display: flex;
+  /*flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+.story.left{
+  width: 300px;
+}
+
+.drink{
+  display: flex;
+  align-items: center;
+  /*display: inline-block;*/
+  height: 300px;
+  background-image: url("../images/story-main.png")
+}
+
+.earth{
+  display: flex;
+  align-items: center;
+  height: 300px;
+  background-image: url("../images/Fallseason.png")
+}
+
+.memory{
+  display: flex;
+  align-items: center;
+  height: 300px;
+  background-image: url("../images/hipster.png")
+}
+
+/*Middle Column Content*/
+
+.column.middle{
+  display: inline-flex;
+  width: 300px;
+  flex-direction: column;
+  margin-right: 32px;
+  margin-top: 80px;
+}
+
+.cat{
+  display: flex;
+  align-items: center;
+  height: 300px;
+  background-image: url("../images/catCEO.png")
+}
+
+/*Right Column Content*/
+
+.column.right{
+  display: flex;
+  width: 240px;
+  flex-direction: column;
+  margin-right: 32px;
+  margin-top: 80px;
+  align-content: center;
+}
+
+.story.right h2{
+
+  margin-bottom: 41px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.bites{
+      display:block;
+      width: 240px;
+      padding: 11px 20px;
+      border-bottom: 1px solid black;
+      background-color: WhiteSmoke;
+      font-family: Verdana;
+      font-size: 12px;
+      color: DimGray;
+}
+
+
+/*All Stories*/
+
+/*.story{
+  display:inline-block;
+} */
+
+.story p{
+  align-items: center;
+  padding: 10px 0px;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+span{
+  text-align: center;
+  font-family: Georgia;
+   font-weight: bold;
+   font-size: 30px;
+   color: white;
+   padding: 20px;
+}
+
+/*Footer*/
+
+footer{
+  display:flex;
+  height: 325px;
+  justify-content: center;
+  align-items: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  flex-direction: column;
+}
+
+.mytimes{
+
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px white solid;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.flogo{
+  align-items: center;
+  display:inline-flex;
+  padding-bottom: 10px;
+}
+
+.flogo nav span{
+  font-family: Verdana;
+  font-weight: normal;
+  font-size: 12px;
+  padding-left: 20px;
+}
+.copyright span{
+  font-weight: normal;
+  color: black;
+  font-family: Verdana;
+  font-size: 12px;
 }
